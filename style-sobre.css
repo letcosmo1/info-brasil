@@ -1,0 +1,190 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+}
+header {
+  background-color: #001001;
+  width: 100%;
+  height: 76px;
+}
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+	line-height: 75px;
+}
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 12px;
+}
+header nav ul li a{
+  font-family: arial;
+  font-size: 14px;
+  color: white;
+}
+h1 {
+  font-family: arial;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 900;
+  color: black;
+	text-transform: uppercase;
+	text-align: center;
+  padding: 20px 0;
+}
+.sobre-text {
+  margin: 0 12px 12px 12px;
+}
+.sobre-text article p {
+  margin-bottom: 8px;
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  line-height: 22px;
+  text-align: justify;
+}
+.sobre-just {
+  margin: 24px 12px 12px 12px;
+}
+.sobre-just h2{
+  padding-bottom: 12px;
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.sobre-just ul {
+  list-style-type: disc;
+}
+.sobre-just ul li{
+  margin-bottom: 8px;
+  margin-left: 12px;
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  line-height: 22px;
+}
+.sobre-equipe {
+  margin: 24px 12px;
+}
+.sobre-equipe h3 {
+  padding-bottom: 12px;
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sobre-equipe ul {
+  padding-left: 12px;
+}
+.sobre-equipe ul li{
+  margin-bottom: 8px;
+  font-family: arial;
+  font-size: 14px;
+  color: black;
+  line-height: 18px;
+}
+
+@media only screen and (min-width: 1000px) {
+  header nav ul {
+		margin: 0;
+	}
+  body {
+    background-image: url(img/banner1.jpg);
+
+  }
+  .wrapper {
+		width: 1000px;
+		margin: 0 auto;
+    background-color: white;
+	}
+  .flex-container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .sobre-text {
+    width: calc(75% - 62px);
+    margin: 0 12px 0 50px;
+  }
+  .sobre-text article {
+    padding: 12px;
+  }
+  .sobre-text article p {
+    text-align: left;
+  }
+  .sobre-just {
+    width: calc(75% - 62px);
+    margin: 0 12px 12px 50px;
+  }
+  .sobre-just h2 {
+    padding: 12px 12px 0 12px;
+  }
+  .sobre-just ul {
+    padding: 12px;
+  }
+  .sobre-just ul li {
+    margin-left: 0;
+  }
+  .sobre-equipe {
+    width: calc(25% - 50px);
+    margin: 0 50px 0 0;
+    border: 2px solid black;
+    height: 350px;
+  }
+  .sobre-equipe h3 {
+    padding: 20px 12px 12px 12px;
+  }
+  .sobre-equipe ul {
+    padding-right: 12px;
+    padding-left: 35px;
+  }
+}
